@@ -4,7 +4,7 @@ import logoMb from "../assets/hamburger.png";
 const Navbar = () => {
   return (
     <section className=" border-b border-gray-200 sticky top-0 z-50 shadow-sm">
-      <nav className="flex justify-between items-center container mx-auto p-7">
+      <nav className="flex justify-between items-center container mx-auto p-7 bg-[#FFFFFF]">
         <img src={logoMb} alt="" className="md:hidden" />
         <img src={logo} alt="" className="" />
         <div className="hidden md:block">

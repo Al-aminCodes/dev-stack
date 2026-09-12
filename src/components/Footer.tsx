@@ -3,7 +3,7 @@ import footerLogo from "../assets/logo-text.png";
 const Footer = () => {
   return (
     <footer className="border-t border-gray-200 ">
-      <div className="container mx-auto p-15 ">
+      <div className="container mx-auto m-15 ">
         {/* first div for logo product legal */}
         <div className="flex flex-col md:flex-row text-center md:text-left  justify-between border-b border-gray-200 pb-10 ">
           {/* image */}
