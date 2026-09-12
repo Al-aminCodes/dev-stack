@@ -2,7 +2,7 @@ import hero from "../assets/banner-stack.png";
 
 const Hero = () => {
   return (
-    <header className="flex flex-col md:flex-row text-center md:text-left  justify-between items-center container mx-auto ">
+    <header className="flex flex-col md:flex-row text-center md:text-left  justify-between items-center container mx-auto px-4 sm:px-6 lg:px-8 ">
       <div className=" p-4 space-y-3">
         <h1 className="text-5xl font-extrabold leading-[1.05] mb-6">
           <span className="text-[#0F172A]">Build Your Ideal</span>
