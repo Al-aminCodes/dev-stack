@@ -17,7 +17,7 @@ export const StackShowCard = ({
   const hendelDelet = () => {
     const removeStack = skillsAdd.filter((dev) => dev.id !== skill.id);
     setSkillsAdd(removeStack);
-    toast.error(`${skill.id} is delete form your Stack`, {
+    toast.info(`${skill.id} is delete form your Stack`, {
       position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: false,

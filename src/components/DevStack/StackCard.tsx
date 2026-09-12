@@ -77,8 +77,15 @@ export function StackCard({
       {/* Button */}
       <button
         onClick={handelButton}
-        className="mt-4 w-full rounded-lg bg-slate-950 py-3 text-sm font-medium text-white transition hover:bg-slate-800  disabled:bg-gray-400 disabled:hover:bg-gray-400 disabled:rounded-md"
         disabled={isAdds}
+        className={`mt-4 w-full rounded-lg py-3 text-sm font-medium text-white transition
+    ${
+      isAdds
+        ? "bg-pink-500 disabled:bg-pink-500"
+        : "bg-slate-950 hover:bg-slate-800"
+    }
+    disabled:cursor-not-allowed
+  `}
       >
         {isAdds ? "Added to Stack" : "Add to Stack"}
       </button>

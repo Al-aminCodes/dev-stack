@@ -15,7 +15,7 @@ export const YourStackCard = ({
 }: YourStackCardProps) => {
   const removeAllStack = () => {
     setSkillsAdd([]);
-    toast.warn("remove all your Stack", {
+    toast.info("remove all your Stack", {
       position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: false,
