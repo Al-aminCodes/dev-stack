@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-gray-200 ">
       <div className="container mx-auto m-15 px-4 sm:px-6 lg:px-8 ">
-        {/* first div for logo product legal */}
+        {/* first div for logo product  */}
         <div className="flex flex-col md:flex-row text-center md:text-left  justify-between border-b border-gray-200 pb-10 ">
           {/* image */}
           <div className="space-y-3  ">
