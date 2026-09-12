@@ -19,6 +19,9 @@ This project helps users manage and explore their developer stack with a clean a
 - 🎨 **Modern UI** — Clean and user-friendly interface using Tailwind CSS and DaisyUI.
 - 📦 **Developer Stack Management** — Users can add technologies to their stack, remove a single technology, or clear all selected technologies at once.
 
+## Live Demo link
+link: https://dev-stacks.netlify.app/
+
 ## 📚 React Questions & Answers
 
 ### 1. What is JSX, and why is it used in React?
