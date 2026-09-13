@@ -16,11 +16,26 @@ export function StackCard({
   // const [isAdd, setIsAdd] = useState(false);
   const isAdds = skillsAdd.some((skill) => skill.id === stackData.id);
   const handelButton = () => {
-    const newSkills = [...skillsAdd, stackData];
+    if (isAdds) {
+      toast.warn(`${stackData.name} is already in your stack`, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
 
-    setSkillsAdd(newSkills);
-    toast.success(`${stackData.id} add to your stack`, {
-      position: "bottom-right",
+      return;
+    }
+
+    setSkillsAdd([...skillsAdd, stackData]);
+
+    toast.success(`${stackData.name} added to your stack`, {
+      position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: false,
@@ -77,17 +92,13 @@ export function StackCard({
       {/* Button */}
       <button
         onClick={handelButton}
-        disabled={isAdds}
-        className={`mt-4 w-full rounded-lg py-3 text-sm font-medium text-white transition
-    ${
-      isAdds
-        ? "bg-pink-500 disabled:bg-pink-500"
-        : "bg-slate-950 hover:bg-slate-800"
-    }
-    disabled:cursor-not-allowed
-  `}
+        className={`mt-4 w-full rounded-lg py-3 text-sm font-medium text-white transition ${
+          isAdds
+            ? "cursor-not-allowed bg-pink-500"
+            : "bg-slate-950 hover:bg-slate-800"
+        }`}
       >
-        {isAdds ? "Added to Stack" : "Add to Stack"}
+        {isAdds ? "✓ Added to Stack" : "Add to Stack"}
       </button>
     </div>
   );

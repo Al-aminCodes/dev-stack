@@ -40,7 +40,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="flex ">
+        <div className="flex">
           <button className="btn btn-ghost font-normal">Sign In</button>
           <button className="btn bg-[#DB2777] rounded-2xl text-white hover:bg-pink-500">
             Sign Up
